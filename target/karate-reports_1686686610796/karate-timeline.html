@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/tests\/POST[1:10]","start":1686686537314,"end":1686686537900,"title":"src\/test\/java\/tests\/POST[1:10] 14:02:17.314-14:02:17.900 Create user"},{"id":2,"group":1,"content":"src\/test\/java\/tests\/POST[2:18]","start":1686686537905,"end":1686686537957,"title":"src\/test\/java\/tests\/POST[2:18] 14:02:17.905-14:02:17.957 Create user using Background"},{"id":3,"group":1,"content":"src\/test\/java\/tests\/POST[3:26]","start":1686686537962,"end":1686686538021,"title":"src\/test\/java\/tests\/POST[3:26] 14:02:17.962-14:02:18.021 Create an user and assert the values"},{"id":4,"group":1,"content":"src\/test\/java\/tests\/POST[4:38]","start":1686686538026,"end":1686686538069,"title":"src\/test\/java\/tests\/POST[4:38] 14:02:18.026-14:02:18.069 Create an user and assert the entire response"},{"id":5,"group":1,"content":"src\/test\/java\/tests\/POST[5:47]","start":1686686538077,"end":1686686538116,"title":"src\/test\/java\/tests\/POST[5:47] 14:02:18.077-14:02:18.116 Create an user using request and response files","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

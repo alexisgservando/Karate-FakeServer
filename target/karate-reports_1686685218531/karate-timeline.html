@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/tests\/GET[1:7]","start":1686684870614,"end":1686684871123,"title":"src\/test\/java\/tests\/GET[1:7] 13:34:30.614-13:34:31.123 Get the list of users"},{"id":2,"group":1,"content":"src\/test\/java\/tests\/GET[2:14]","start":1686684871134,"end":1686684871192,"title":"src\/test\/java\/tests\/GET[2:14] 13:34:31.134-13:34:31.192 Get all the users"},{"id":3,"group":1,"content":"src\/test\/java\/tests\/GET[3:21]","start":1686684871198,"end":1686684871243,"title":"src\/test\/java\/tests\/GET[3:21] 13:34:31.198-13:34:31.243 Get 1 user with param"},{"id":4,"group":1,"content":"src\/test\/java\/tests\/GET[4:29]","start":1686684871248,"end":1686684871286,"title":"src\/test\/java\/tests\/GET[4:29] 13:34:31.248-13:34:31.286 Get 1 user with path"},{"id":5,"group":1,"content":"src\/test\/java\/tests\/GET[5:36]","start":1686684871292,"end":1686684871342,"title":"src\/test\/java\/tests\/GET[5:36] 13:34:31.292-13:34:31.342 Get all users and assert"},{"id":6,"group":1,"content":"src\/test\/java\/tests\/GET[6:48]","start":1686684871347,"end":1686684871388,"title":"src\/test\/java\/tests\/GET[6:48] 13:34:31.347-13:34:31.388 Get the last user and assert"},{"id":7,"group":1,"content":"src\/test\/java\/tests\/GET[7:61]","start":1686684871393,"end":1686684871431,"title":"src\/test\/java\/tests\/GET[7:61] 13:34:31.393-13:34:31.431 Get all the users enrolled in subject 2"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

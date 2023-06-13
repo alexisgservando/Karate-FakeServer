@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/tests\/GET[1:7]","start":1686673059054,"end":1686673059508,"title":"src\/test\/java\/tests\/GET[1:7] 10:17:39.054-10:17:39.508 Get the list of users"},{"id":2,"group":1,"content":"src\/test\/java\/tests\/GET[2:14]","start":1686673059515,"end":1686673059566,"title":"src\/test\/java\/tests\/GET[2:14] 10:17:39.515-10:17:39.566 Get all the users"},{"id":3,"group":1,"content":"src\/test\/java\/tests\/GET[3:21]","start":1686673059573,"end":1686673059629,"title":"src\/test\/java\/tests\/GET[3:21] 10:17:39.573-10:17:39.629 Get 1 user with param"},{"id":4,"group":1,"content":"src\/test\/java\/tests\/GET[4:29]","start":1686673059635,"end":1686673059676,"title":"src\/test\/java\/tests\/GET[4:29] 10:17:39.635-10:17:39.676 Get 1 user with pat"},{"id":5,"group":1,"content":"src\/test\/java\/tests\/GET[5:36]","start":1686673059682,"end":1686673059723,"title":"src\/test\/java\/tests\/GET[5:36] 10:17:39.682-10:17:39.723 Get all users and assert","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

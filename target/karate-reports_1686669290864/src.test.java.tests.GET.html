@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.tests.GET</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2023-06-13 09:14:22 AM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:4]"><span>[1:4]</span> <span>Get the list of users</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/tests/GET.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Get Users from the db.json</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:4]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:4]</span>
+                <span class="scenario-name">Get the list of users</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>384</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &#39;http://localhost:3000/&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">49</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">271</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">09:14:21.919 request:
+1 &gt; GET http://localhost:3000/
+1 &gt; Host: localhost:3000
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+09:14:21.971 response time in milliseconds: 48
+1 &lt; 200
+1 &lt; X-Powered-By: Express
+1 &lt; Vary: Origin, Accept-Encoding
+1 &lt; Access-Control-Allow-Credentials: true
+1 &lt; Accept-Ranges: bytes
+1 &lt; Cache-Control: public, max-age=0
+1 &lt; Last-Modified: Wed, 24 May 2023 20:24:15 GMT
+1 &lt; ETag: W/&quot;809-1884f6f057f&quot;
+1 &lt; Content-Type: text/html; charset=UTF-8
+1 &lt; Date: Tue, 13 Jun 2023 15:14:21 GMT
+1 &lt; Connection: keep-alive
+1 &lt; Keep-Alive: timeout=5
+1 &lt; Transfer-Encoding: chunked
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;link
+      rel=&quot;stylesheet&quot;
+      href=&quot;https://use.fontawesome.com/releases/v5.8.2/css/all.css&quot;
+      integrity=&quot;sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay&quot;
+      crossorigin=&quot;anonymous&quot;
+    /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; /&gt;
+    &lt;title&gt;JSON Server&lt;/title&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;nav&gt;
+          &lt;ul&gt;
+            &lt;li class=&quot;title&quot;&gt;
+              JSON Server
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;https://github.com/users/typicode/sponsorship&quot;&gt;
+                &lt;i class=&quot;fas fa-heart&quot;&gt;&lt;/i&gt;GitHub Sponsors
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;https://my-json-server.typicode.com&quot;&gt;
+                &lt;i class=&quot;fas fa-burn&quot;&gt;&lt;/i&gt;My JSON Server
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;https://thanks.typicode.com&quot;&gt;
+                &lt;i class=&quot;far fa-laugh&quot;&gt;&lt;/i&gt;Supporters
+              &lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/nav&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;h1&gt;Congrats!&lt;/h1&gt;
+        &lt;p&gt;
+          You&#39;re successfully running JSON Server
+          &lt;br /&gt;
+          ✧*｡٩(ˊᗜˋ*)و✧*｡
+        &lt;/p&gt;
+
+        &lt;div id=&quot;resources&quot;&gt;&lt;/div&gt;
+
+        &lt;p&gt;
+          To access and modify resources, you can use any HTTP method:
+        &lt;/p&gt;
+        &lt;p&gt;
+          &lt;code&gt;GET&lt;/code&gt;
+          &lt;code&gt;POST&lt;/code&gt;
+          &lt;code&gt;PUT&lt;/code&gt;
+          &lt;code&gt;PATCH&lt;/code&gt;
+          &lt;code&gt;DELETE&lt;/code&gt;
+          &lt;code&gt;OPTIONS&lt;/code&gt;
+        &lt;/p&gt;
+
+        &lt;div id=&quot;custom-routes&quot;&gt;&lt;/div&gt;
+
+        &lt;h1&gt;Documentation&lt;/h1&gt;
+        &lt;p&gt;
+          &lt;a href=&quot;https://github.com/typicode/json-server&quot;&gt;
+            README
+          &lt;/a&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;p&gt;
+          To replace this page, create a
+          &lt;code&gt;./public/index.html&lt;/code&gt; file.
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/footer&gt;
+
+    &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">64</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">09:14:22.035 [print] &lt;html&gt;
+  &lt;head&gt;
+    &lt;link
+      rel=&quot;stylesheet&quot;
+      href=&quot;https://use.fontawesome.com/releases/v5.8.2/css/all.css&quot;
+      integrity=&quot;sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay&quot;
+      crossorigin=&quot;anonymous&quot;
+    /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; /&gt;
+    &lt;title&gt;JSON Server&lt;/title&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;header&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;nav&gt;
+          &lt;ul&gt;
+            &lt;li class=&quot;title&quot;&gt;
+              JSON Server
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;https://github.com/users/typicode/sponsorship&quot;&gt;
+                &lt;i class=&quot;fas fa-heart&quot;&gt;&lt;/i&gt;GitHub Sponsors
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;https://my-json-server.typicode.com&quot;&gt;
+                &lt;i class=&quot;fas fa-burn&quot;&gt;&lt;/i&gt;My JSON Server
+              &lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+              &lt;a href=&quot;https://thanks.typicode.com&quot;&gt;
+                &lt;i class=&quot;far fa-laugh&quot;&gt;&lt;/i&gt;Supporters
+              &lt;/a&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/nav&gt;
+      &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;h1&gt;Congrats!&lt;/h1&gt;
+        &lt;p&gt;
+          You&#39;re successfully running JSON Server
+          &lt;br /&gt;
+          ✧*｡٩(ˊᗜˋ*)و✧*｡
+        &lt;/p&gt;
+
+        &lt;div id=&quot;resources&quot;&gt;&lt;/div&gt;
+
+        &lt;p&gt;
+          To access and modify resources, you can use any HTTP method:
+        &lt;/p&gt;
+        &lt;p&gt;
+          &lt;code&gt;GET&lt;/code&gt;
+          &lt;code&gt;POST&lt;/code&gt;
+          &lt;code&gt;PUT&lt;/code&gt;
+          &lt;code&gt;PATCH&lt;/code&gt;
+          &lt;code&gt;DELETE&lt;/code&gt;
+          &lt;code&gt;OPTIONS&lt;/code&gt;
+        &lt;/p&gt;
+
+        &lt;div id=&quot;custom-routes&quot;&gt;&lt;/div&gt;
+
+        &lt;h1&gt;Documentation&lt;/h1&gt;
+        &lt;p&gt;
+          &lt;a href=&quot;https://github.com/typicode/json-server&quot;&gt;
+            README
+          &lt;/a&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;p&gt;
+          To replace this page, create a
+          &lt;code&gt;./public/index.html&lt;/code&gt; file.
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/footer&gt;
+
+    &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
